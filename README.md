@@ -1,99 +1,61 @@
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Musnad_Alef.svg/120px-Musnad_Alef.svg.png" alt="Musnad Logo" width="80" />
   <h1>منصة خط المسند | Musnad Platform</h1>
-  <p><b>منصة أكاديمية ومجتمعية لتوثيق وترجمة النقوش العربية الجنوبية القديمة (خط المسند).</b></p>
+  <p><b>منصة أكاديمية ومجتمعية متكاملة لتوثيق، ترجمة، واكتشاف النقوش العربية الجنوبية القديمة (خط المسند).</b></p>
 </div>
 
 <br>
 
 ## 🌟 عن المشروع (About The Project)
-**منصة خط المسند** هي تطبيق ويب متكامل مبني باستخدام **Django** يهدف إلى الحفاظ على التراث اليمني القديم وتوثيقه. تقدم المنصة أرشيفاً رقمياً للباحثين والمهتمين بنقوش الممالك اليمنية القديمة (سبأ، معين، حمير، قتبان وغيرها)، وتتيح للمجتمع المشاركة في ترجمة هذه النقوش وتحليلها من خلال بيئة تفاعلية ومحفزة.
+تهدف **منصة خط المسند** إلى حفظ التراث اليمني القديم في أرشيف رقمي ضخم. تم بناء النظام بتصميم عصري وأنيق (Dark Mode) مستوحى من ألوان التراث، ويوفر بيئة للباحثين والمهتمين لاكتشاف الممالك القديمة، والمساهمة في الترجمات، وتوثيق الآثار، بل وحتى استخدام أدوات الذكاء الاصطناعي لقراءة النقوش من الصور مباشرة.
 
-![الواجهة الرئيسية](screenshots/home.png)
+---
 
-## ✨ المميزات الأساسية (Key Features)
+## 📸 جولة داخل المنصة (Platform Showcase)
 
-- 🏛️ **مشهد الممالك التفاعلي (Interactive Kingdoms):** مقارنة بصرية ثلاثية الأبعاد (3D) للممالك اليمنية باستخدام `Three.js` مع بطاقات معلومات غنية.
-- 🔍 **كاشف النقوش الذكي (AI OCR Detection):** نظام مدمج يعتمد على تقنيات الذكاء الاصطناعي (YOLO & PyTorch) للتعرف البصري على حروف خط المسند من الصور المرفوعة.
-- 📝 **الترجمة التشاركية (Crowdsourced Translations):** نظام يسمح للمستخدمين بإضافة ترجمات للنقوش مع دعم التصويت (Voting)، المراجعة (Reviewing)، والاعتماد (Approval).
-- 💬 **مجتمع المعرفة (Community Threads):** مساحات نقاش وتعليقات مرتبطة بكل نقش لتعزيز التفاعل الأكاديمي.
-- 🏆 **نظام السمعة (Reputation & Badges):** نظام تحفيزي يمنح المستخدمين نقاط وشارات عند إضافة نقوش أو ترجمات معتمدة.
-- 🔔 **نظام الإشعارات (Notifications):** إشعارات لحظية للمستخدمين عند الموافقة على مساهماتهم أو التفاعل معها.
-- 🎨 **تصميم حديث وعصري (Modern UI):** واجهات زجاجية (Glassmorphism) تدعم الوضعين الليلي والنهاري (Dark/Light Mode) مبنية على `Bootstrap 5 RTL` و `HTMX` لتجربة مستخدم سلسة بدون إعادة تحميل.
-
-## 📸 لقطات الشاشة (Screenshots)
-
+### 1️⃣ لوحة التحكم الرئيسية والإحصائيات (Dashboard & Home)
+الواجهة الرئيسية تعرض إحصائيات النظام الحية، مثل عدد النقوش الموثقة (أكثر من 5800 نقش)، وأحدث الإضافات، بالإضافة إلى أزرار للوصول السريع إلى أقسام المنصة.
 <div align="center">
-  <img src="screenshots/kingdoms.png" width="45%" alt="مشهد الممالك" />
-  <img src="screenshots/inscriptions.png" width="45%" alt="النقوش" />
+  <img src="screenshots/dashboard.png" width="90%" alt="الرئيسية ولوحة التحكم" />
 </div>
-<br>
+
+### 2️⃣ نظام التعرف البصري بالذكاء الاصطناعي (AI OCR Detector)
+أداة متطورة تسمح برفع صورة لأي حجر أثري، ليقوم نظام الذكاء الاصطناعي بالتعرف على الحروف المسندية، وتحديد أماكنها بدقة (Bounding Boxes) مع عرض نسبة الثقة لكل حرف.
 <div align="center">
-  <img src="screenshots/gallery.png" width="45%" alt="معرض الصور" />
+  <img src="screenshots/ocr_detector.png" width="90%" alt="كاشف الذكاء الاصطناعي" />
 </div>
+
+### 3️⃣ استعراض تفاصيل النقوش (Inscription Details)
+عرض أنيق للبيانات التاريخية، حيث تظهر صورة الحجر الأصلي بجانب النص الكامل المحفور عليه مكتوباً بخط المسند الذهبي المتوهج، ليتسنى للباحثين المقارنة والترجمة.
+<div align="center">
+  <img src="screenshots/inscription_detail.png" width="90%" alt="تفاصيل النقش" />
+</div>
+
+### 4️⃣ مصحح التوسيم الاحترافي (Label Corrector)
+أداة مساعدة مخصصة لفريق العمل الأكاديمي، تسمح باختيار الحروف المسندية من لوحة مفاتيح مخصصة وتحديد إحداثياتها على الصورة الأصلية، لتدريب وتحسين دقة نماذج الذكاء الاصطناعي.
+<div align="center">
+  <img src="screenshots/label_corrector.png" width="90%" alt="مصحح التوسيم" />
+</div>
+
+---
+
+## ✨ المميزات البرمجية والتفاعلية (Key Features)
+
+- 🏛️ **مشهد الممالك التفاعلي:** مقارنة بصرية للممالك اليمنية (سبأ، حمير، قتبان...) مع بطاقات معلومات تفصيلية.
+- 📝 **الترجمة التشاركية (Crowdsourced):** مساحة للباحثين لتقديم ترجمات للنقوش مع آلية للتصويت والمراجعة من قبل المختصين.
+- 💬 **مجتمع المعرفة (Community):** نظام تعليقات ونقاشات مدمج تحت كل نقش.
+- 🏆 **نظام السمعة (Gamification):** مكافأة المستخدمين النشطين بنقاط وشارات (Badges) عند اعتماد مساهماتهم.
 
 ## 🛠️ التقنيات المستخدمة (Tech Stack)
 
-### 🔹 الواجهة الخلفية (Backend)
-- **Framework:** Django 5.2 & Django REST Framework (DRF)
-- **Database:** PostgreSQL / SQLite
-- **AI/ML:** PyTorch, Ultralytics YOLO, OpenCV
+- **الواجهة الخلفية (Backend):** Django 5.2, Django REST Framework (DRF), PostgreSQL / SQLite.
+- **الذكاء الاصطناعي (AI):** Ultralytics YOLO, PyTorch, OpenCV للتعرف البصري (OCR).
+- **الواجهة الأمامية (Frontend):** 
+  - Django Templates مدعومة بتقنية **HTMX** لتحديث الصفحات بدون إعادة تحميل (SPA-like experience).
+  - تصميم متجاوب يعتمد على **Bootstrap 5 RTL** ومتغيرات CSS الحديثة (CSS3 Variables).
+  - تأثيرات الزجاج (Glassmorphism) وتصميم متقن لواجهة المستخدم (UI/UX).
+  - مكتبات مساعدة مثل `Alpine.js` للتفاعلات، و `Three.js / GSAP` للمشاهد ثلاثية الأبعاد.
 
-### 🔹 الواجهة الأمامية (Frontend)
-- **Templates:** Django HTML Templates + HTMX
-- **Styling:** CSS3 Variables (Custom Properties), Bootstrap 5 (RTL)
-- **Scripting:** Vanilla JavaScript, Alpine.js, Three.js, GSAP
-
-## 🚀 كيفية التشغيل (Installation & Setup)
-
-1. **استنساخ المشروع (Clone the repo):**
-   ```bash
-   git clone https://github.com/username/musnad-platform.git
-   cd musnad-platform
-   ```
-
-2. **إنشاء البيئة الوهمية وتفعيلها (Virtual Environment):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **تثبيت الحزم المطلوبة (Install Requirements):**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **إعداد متغيرات البيئة (Environment Variables):**
-   انسخ ملف `.env.example` وقم بتسميته `.env` وعدل المتغيرات داخله حسب الحاجة.
-
-5. **تطبيق قواعد البيانات وإنشاء مستخدم خارق (Migrations & Superuser):**
-   ```bash
-   python manage.py migrate
-   python manage.py createsuperuser
-   ```
-
-6. **تشغيل الخادم المحلي (Run Server):**
-   ```bash
-   python manage.py runserver
-   ```
-   يمكنك الآن تصفح الموقع عبر الرابط: `http://127.0.0.1:8000/musnad/`
-
-## 📂 هيكلية المشروع الأساسية (Project Structure)
-- `inscriptions/`: إدارة النقوش الأساسية وسير عمل المراجعة.
-- `accounts/`: إدارة المستخدمين والملفات الشخصية.
-- `translations/`: سير عمل الترجمات والتصويت.
-- `frontend/`: موجهات الواجهة الأمامية (Views) والـ Forms.
-- `templates/`: قوالب HTML مرتبة بأسلوب هندسي ممتاز مع HTMX.
-- `community/`: إدارة النقاشات والتعليقات.
-
-## 🤝 المساهمة (Contributing)
-نرحب بجميع المساهمات! لعمل أي تعديلات:
-1. قم بعمل Fork للمستودع.
-2. أنشئ Branch جديد (`git checkout -b feature/AmazingFeature`).
-3. أضف تعديلاتك وقم بعمل Commit (`git commit -m 'Add some AmazingFeature'`).
-4. ارفع التعديلات (`git push origin feature/AmazingFeature`).
-5. افتح Pull Request.
-
-## 📜 الترخيص (License)
-جميع الحقوق محفوظة - مشروع منصة خط المسند © 2026.
-تطوير: **م. ريم الوائل**
+## 🤝 فريق التطوير
+تم التصميم والتطوير بواسطة: **م. ريم الوائل**
+© 2026 جميع الحقوق محفوظة لـ منصة خط المسند.
