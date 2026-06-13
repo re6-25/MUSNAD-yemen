@@ -59,43 +59,7 @@
 | **قواعد البيانات (Database)** | PostgreSQL (Production), SQLite (Dev) |
 | **النشر والتشغيل (DevOps)** | Docker, Docker Compose |
 
----
 
-## 🚀 كيفية التشغيل (Installation & Setup)
-
-هناك طريقتان لتشغيل المشروع على جهازك: باستخدام **Docker** (الطريقة الأسهل والأسرع) أو بالطريقة التقليدية.
-
-### الطريقة الأولى: باستخدام Docker (مُوصى بها)
-تأكد من تثبيت وتشغيل [Docker Desktop](https://www.docker.com/products/docker-desktop).
-```bash
-git clone https://github.com/re6-25/MUSNAD-yemen.git
-cd MUSNAD-yemen
-docker-compose up --build -d
-```
-سيتم بناء البيئة بالكامل، وتشغيل قاعدة البيانات، وسيكون الموقع متاحاً على الرابط: `http://localhost:8000`
-
-### الطريقة الثانية: التشغيل اليدوي (Local Setup)
-1. إنشاء وتفعيل البيئة الوهمية:
-```bash
-python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On Mac/Linux
-source venv/bin/activate
-```
-2. تثبيت الحزم المطلوبة:
-```bash
-pip install -r requirements.txt
-```
-3. إعداد قواعد البيانات والمستخدم الخارق:
-```bash
-python manage.py migrate
-python manage.py createsuperuser
-```
-4. تشغيل الخادم:
-```bash
-python manage.py runserver
-```
 
 ---
 
