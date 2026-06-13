@@ -112,15 +112,43 @@ python manage.py runserver
 
 ---
 
-## 📸 جولة في المنصة (Screenshots)
+## 📸 جولة تفصيلية داخل المنصة (Platform Showcase)
 
+تتميز المنصة بتصميم نهاري/ليلي متجاوب يعكس الأصالة اليمنية. إليك نظرة مفصلة على أبرز أقسام المنصة:
+
+### 1️⃣ الواجهة الرئيسية والممالك القديمة (Home & Kingdoms)
+بوابة الدخول للتاريخ اليمني، حيث تستعرض الواجهة الرئيسية إحصائيات النظام الحية (أكثر من 5800 نقش موثق). كما يتيح لك قسم الممالك القديمة استكشاف (سبأ، حمير، قتبان...) عبر بطاقات معلومات تفصيلية مبهرة.
 <p align="center">
-  <img src="screenshots/dashboard.png" width="48%" alt="لوحة التحكم" />
-  <img src="screenshots/inscription_detail.png" width="48%" alt="تفاصيل النقش" />
+  <img src="screenshots/01_home.png" width="48%" alt="الواجهة الرئيسية" />
+  <img src="screenshots/02_kingdoms.png" width="48%" alt="الممالك القديمة" />
 </p>
+
+### 2️⃣ مكتبة النقوش والمعرض التراثي (Inscriptions & Gallery)
+أرشيف رقمي ضخم يسمح بالبحث المتقدم في النقوش، واستعراض تفاصيلها التاريخية مع إظهار النص الأصلي المحفور بخط المسند الذهبي، بالإضافة لمعرض صور شبكي انسيابي.
 <p align="center">
-  <img src="screenshots/ocr_detector.png" width="48%" alt="كاشف الذكاء الاصطناعي (OCR)" />
-  <img src="screenshots/label_corrector.png" width="48%" alt="أداة تصحيح البيانات" />
+  <img src="screenshots/03_inscriptions.png" width="48%" alt="مكتبة النقوش" />
+  <img src="screenshots/04_gallery.png" width="48%" alt="المعرض التراثي" />
+</p>
+
+### 3️⃣ الذكاء الاصطناعي ورفع النقوش (AI OCR & Upload)
+أداة متطورة تسمح للباحثين برفع صور لأي حجر أثري، ليقوم نظام الذكاء الاصطناعي بالتعرف البصري على الحروف المسندية وتحديد أماكنها بدقة (Bounding Boxes)، مع إمكانية مساهمة الباحث برفع وتوثيق نقوش جديدة.
+<p align="center">
+  <img src="screenshots/06_ocr.png" width="48%" alt="كاشف المسند (OCR)" />
+  <img src="screenshots/05_upload.png" width="48%" alt="رفع نقش جديد" />
+</p>
+
+### 4️⃣ لوحة التحكم والملف الشخصي (Dashboard & Profile)
+مساحة مخصصة لكل مستخدم وباحث تعرض إحصائياته الخاصة، مستواه، والنقوش التي ساهم في ترجمتها، مما يعزز نظام التفاعل الأكاديمي والسمعة داخل المنصة.
+<p align="center">
+  <img src="screenshots/07_dashboard.png" width="48%" alt="لوحة تحكم المستخدم" />
+  <img src="screenshots/08_profile.png" width="48%" alt="الملف الشخصي" />
+</p>
+
+### 5️⃣ المفضلة وإعدادات الحساب (Favorites & Settings)
+نظام مرن لحفظ النقوش للرجوع إليها سريعاً أثناء البحث العلمي، مع واجهة إعدادات شاملة تتيح للمستخدم تخصيص تجربته، إدارة الخصوصية، وتحديث بياناته.
+<p align="center">
+  <img src="screenshots/09_favorites.png" width="48%" alt="المفضلة والمحفوظات" />
+  <img src="screenshots/10_settings.png" width="48%" alt="إعدادات الحساب" />
 </p>
 
 ---
